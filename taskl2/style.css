@@ -1,0 +1,236 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* About Section Styling */
+#about {
+    padding: 60px 0;
+    background: white;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+/* Skills Section Styling */
+#skills {
+    padding: 60px 0;
+    background: #fafafa;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+#skills li {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Projects Section Styling */
+#projects {
+    padding: 60px 0;
+    background: white;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Resume Section Styling */
+#resume {
+    padding: 60px 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+#resume .cta-button {
+    background: #333;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#resume .cta-button:hover {
+    background: #444;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 60px 0;
+    background: white;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
+    #skills li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #resume .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
